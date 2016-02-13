@@ -33,9 +33,17 @@
                 <h5 class="info-text" style="margin-bottom: 15px;">
                     Help us make this project a reality. We really need your help!
                 </h5>
-                <button class="btn-lg btn-danger btn-fill" onclick="navigateToGithub();">
+                <button class="btn-lg btn-warning btn-fill" style="width: 280px;" onclick="navigateToDemo();">
+                    <i class="fa fa-globe"></i>
+                    Website Demo
+                </button><br/>
+                <button class="btn-lg btn-danger btn-fill" style="width: 280px; margin-top: 10px;" onclick="navigateToGithub();">
                     <i class="fa fa-github"></i>
                     Github Project
+                </button><br/>
+                <button class="btn-lg btn-info btn-fill" style="width: 280px; margin-top: 10px;" onclick="navigateToTwitter();">
+                    <i class="fa fa-twitter"></i>
+                    Follow me
                 </button>
             </div>
         </div>
@@ -46,8 +54,18 @@
 <script src="promo/js/jquery-1.10.2.js" type="text/javascript"></script>
 <script src="promo/js/bootstrap.min.js" type="text/javascript"></script>
 <script>
+    function navigateToDemo() {
+        window.location.href = "home";
+    }
+
     function navigateToGithub() {
-        window.location.href = "https://github.com/8bitNerd/Nerdtopia";
+        var win = window.open('https://github.com/8bitNerd/Nerdtopia', '_blank');
+        win.focus();
+    }
+
+    function navigateToTwitter() {
+        var win = window.open('https://twitter.com/An8bitNerd', '_blank');
+        win.focus();
     }
 </script>
 
